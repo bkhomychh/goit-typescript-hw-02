@@ -3,9 +3,7 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
-type Key = string | symbol;
-
-interface KeyValuePair<T extends Key, U> {
+interface KeyValuePair<T, U> {
   key: T;
   value: U;
 }
